@@ -31,6 +31,13 @@ class Snake():
         t1.goto(position)
         self.snake.append(t1)
 
+    def reset_snake(self):
+        for seg in self.snake:
+            seg.goto(1000, 1000)
+        self.snake.clear()
+        self.create_snake()
+        self.head = self.snake[0]
+
     def move(self):
         for seg_num in range(len(self.snake) - 1, 0, -1):
             new_x = self.snake[seg_num - 1].xcor()
