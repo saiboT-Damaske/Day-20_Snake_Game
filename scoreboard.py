@@ -4,8 +4,6 @@ SCOREBOARD_POS = (0, 270)
 ALIGNMENT = "center"
 FONT = ('Courier', 15, "normal")
 
-
-
 class Score(Turtle):
 
     def __init__(self):
